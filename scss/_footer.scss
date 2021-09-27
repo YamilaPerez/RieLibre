@@ -1,0 +1,30 @@
+footer {
+    background-image: linear-gradient(palevioletred, #ffc1d7);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.imagenesfooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .imagenesFooter{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
