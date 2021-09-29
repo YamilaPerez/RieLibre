@@ -5,11 +5,7 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    background-color: #FFD93B;
-
-    &-inicio {
-        height: 100vh;
-    }
+    background-color: $bgHeader;
 }
 
 .navbar {
@@ -19,10 +15,6 @@
     align-items: center;
     padding: 5px 0;
     font-family: 'Architects Daughter', cursive;
-
-    &-inicio {
-        height: 100px;
-    }
 
     &-brand {
         display: flex;
@@ -42,7 +34,6 @@
         width: 100%;
         padding-right: 30px;
         z-index: 100;
-        background-color: #ffd83bc2;
     }
 
     &-nav {
@@ -60,28 +51,13 @@
                 }
             }
         }
+    }
+}
 
-        .dropdown {
-            &-toggle::after {
-                margin-left: 0;
-            }
-
-            &-menu {
-                background-color: white;
-                margin: 0;
-                border: 3px solid black;
-                padding: 10px 20px;
-            }
-
-            &-item {
-                font-size: 15px;
-                word-spacing: 2px;
-                border-bottom: 1px solid black;
-
-                &-last {
-                    border: none;
-                }
-            }
-        }
+@media screen and (max-width: 992px){
+    .navbar {
+        &-collapse {
+            background-color: rgba($bgHeader, 0.9);
+        }        
     }
 }

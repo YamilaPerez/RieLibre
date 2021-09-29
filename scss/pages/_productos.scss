@@ -1,0 +1,183 @@
+.productos {
+    display: flex;
+    min-height: 100vh;
+}
+
+.contGaleria {
+    width: 100%;
+    padding: 30px 5%;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "tela"
+      "madera"
+      "mayorista"
+      "lona"
+      "catalogo";
+    grid-template-columns: 80%;
+    grid-template-rows: 80vw 50vw 80vw 50vw 500px;
+    grid-row-gap: 20px;
+  }
+  
+  $imgNames: (tela, madera, lona, mayorista, catalogo);
+  @each $name in $imgNames {
+    .#{$name} {
+      grid-area: $name;
+      background-image: url("../imagenes/galeria/" + $name + ".jpg");
+      width: 100%;
+    }
+  }
+  
+$fontPrincipal: 'Mountains of Christmas', cursive;
+  .itemGaleria {
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    width: 100%;
+    .itemCaption {
+      width: 100%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &--producto {
+        width: 100%;
+        height: 100%;
+        background-color: #986662cc;
+        justify-content: flex-start;
+        .botonGaleria {
+          padding: 10px 0;
+          width: 250px;
+          border-radius: 50px;
+          outline: none;
+          border: 0;
+          cursor: pointer;
+          font-family: $fontPrincipal;
+          font-size: 18px;
+          color: blue;
+          background-color: red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          filter: brightness(90%);
+          cursor: pointer;
+          .contFlecha {
+            background-color: #e8e5e566;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            .flechaBoton {
+              font-size: 24px;
+            }
+          }
+          &:hover {
+            filter: brightness(100%);
+          }
+        }
+      }
+      .iconAngulo {
+        display: none;
+      }
+      h4 {
+        width: 100%;
+        background-color: rgba(112, 112, 112, 0.7);
+        height: 50px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 576px) {
+    .contGaleria {
+      height: 100vh;
+      grid-template-areas:
+        "tela catalogo"
+        "madera catalogo"
+        "mayorista catalogo"
+        "lona catalogo";
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 30vh 50vw;
+      grid-column-gap: 30px;
+      grid-row-gap: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .contGaleria {
+      grid-template-areas:
+        "tela  madera catalogo"
+        "lona  mayorista catalogo";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1.2fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .contGaleria {
+      grid-template-areas:
+        "tela tela madera madera madera catalogo catalogo"
+        "lona lona lona mayorista mayorista catalogo catalogo";
+      grid-template-columns: repeat(5, 1fr) 150px 150px;
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+    }
+  
+    .itemGaleria {
+      .itemCaption {
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: unset;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+        }
+        &--producto {
+            padding-top: 80px;
+          background-color: unset;
+          opacity: 1;
+          align-items: center;
+        }
+        &--producto:hover {
+          background-color: #986662cc;
+        }
+        .iconAngulo {
+          display: flex;
+          overflow: hidden;
+          &:first-child {
+            justify-content: flex-end;
+          }
+          &:last-child {
+            align-items: flex-end;
+          }
+          .arrow {
+            transform: rotate(45deg);
+            font-size: 40px;
+          }
+        }
+        h4 {
+          text-align: center;
+          height: 100px;
+          line-height: 40.11px;
+          background-color: unset;
+        }
+      }
+    }
+  }
+  
