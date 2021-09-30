@@ -1,3 +1,5 @@
+//BANNER PRINCIPAL
+
 .bannerInicio {
     display: flex;
     flex-flow: row nowrap;
@@ -5,6 +7,7 @@
     width: 100%;
     height: 90vh;
     background-color: $bgInicio;
+
     &-texto {
         width: 50%;
         font-family: 'Dancing Script', cursive;
@@ -15,15 +18,49 @@
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        h1{
+
+        h1 {
             font-size: 70px;
+            z-index: 20;
         }
+
         h2 {
             font-size: 60px;
             color: black;
             font-family: 'Dancing Script', cursive;
             background-color: unset;
             z-index: 50;
+        }
+        a{
+            z-index: 30;
+        }
+        .botonComprar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px auto;
+            border-radius: 50px;
+            background-color: palevioletred;
+            color: white;
+            padding: 15px 20px 15px 20px;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 20px;
+            outline: none;
+            width: 200px;
+            border-color: palevioletred;
+            border-style: outset;
+            border-width: 2px;
+            border: none;
+            z-index: 10;
+            &:hover {
+                border-width: 4px;
+                color: white;
+                transform: scale(1.1, 1.1);
+                background-color: rgb(247, 128, 187);
+                border-radius: 50px;
+            }
         }
     }
 
@@ -35,10 +72,13 @@
         img {
             width: 100%;
             height: auto;
+            z-index: 0;
         }
     }
 }
 
+
+//EN RESPONSIVE LA IMAGEN QUEDA DE FONDO CON OPACITY BAJO
 @media screen and (max-width: 768px) {
     .bannerInicio {
         display: flex;
@@ -53,6 +93,7 @@
             font-family: 'Dancing Script', cursive;
             word-spacing: 10px;
             font-size: 100%;
+            padding: 0 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -61,11 +102,12 @@
             text-align: center;
 
             h2 {
-                font-size: 60px;
+                font-size: 40px;
                 color: black;
                 font-family: 'Dancing Script', cursive;
                 background-color: unset;
             }
+
         }
 
         &-imagen {
@@ -76,6 +118,7 @@
                 width: 100%;
                 height: auto;
                 opacity: 50%;
+                z-index: 0;
             }
         }
     }

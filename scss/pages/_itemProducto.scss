@@ -1,3 +1,13 @@
+//CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
+.seccionProductos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 30px 2%;
+}
+
+//CARD PRODUCTO
 .producto {
     width: 270px;
     height: 380px;
@@ -6,7 +16,7 @@
     box-shadow: 0px 0px 2px 2px #c9c0c6;
     border-radius: 5px;
     padding: 1em;
-
+    background-color: $bgItemProducto;
     &__nombre {
         display: flex;
         flex-direction: row;
@@ -17,12 +27,12 @@
             font-weight: 500;
             font-size: 1.3rem;
             margin: 5px 0;
-            //color: #1D2C36;
+            color: $colorItemProducto;
         }
     }
 
     &__borde {
-        border-top: 5px solid black;
+        border-top: 5px solid $colorItemProducto;
         margin-bottom: 10px;
     }
 
@@ -35,13 +45,13 @@
         p {
             font-weight: 500;
             font-size: 1.5rem;
-            color: $verde;
+            color: $colorItemProducto;
         }
     }
 
     .botones {
-        border-color: $verde;
-        background-color: $verde;
+        border-color: $colorItemProducto;
+        background-color: $colorItemProducto;
     }
 
     .sinStock {
@@ -63,6 +73,7 @@
 
 .flecha {
     font-size: 30px;
+    color: $colorItemProducto;
 }
 
 .carousel-control-prev {

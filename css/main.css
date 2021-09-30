@@ -1,48 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 * {
   margin: 0;
   padding: 0;
-}
-
-.fuente {
-  font-family: 'Mountains of Christmas', cursive;
-  color: #E77E4D;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
 }
 
-.logoFondo {
-  display: inline-block;
-  margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .tituloSeccion {
   text-align: center;
   word-spacing: 15px;
-  font-family: 'Mountains of Christmas', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 50px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-/*
-h3{
-    background-color:  #FFD93B;
-     margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Dancing Script', cursive;   
-    word-spacing: 10px;
-    font-size: 30px;
-}
-*/
 h5 {
   color: white;
   font-size: 20px;
@@ -50,52 +28,6 @@ h5 {
   letter-spacing: 3px;
 }
 
-/*
-p{
-    display: inline-block;
-    color:white;
-    font-family: 'Mountains of Christmas', cursive;
-    width: 100%;
-    height: auto;
-    font-size: 15px;
-    letter-spacing: 2px;
-    background-color:palevioletred;
-}
-*/
-/*
-.texto{
-    display: flex;
-    justify-content: space-evenly;
-    background-color:#FFC1D7;
-}*/
-/*
-
-.imagenTexto1{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 100%;
-    background-color: #FFC1D7;
-}
-
-.imagenTexto_texto1{
-    width: 50%;
-    font-family: 'Mountains of Christmas', cursive;
-    word-spacing: 10px;
-    letter-spacing: 10px;
-    margin-left: 10px;
-    margin-top: 180px;
-    margin-bottom: 180px;
-    justify-content:center;
-    text-align: center;
-}
-
-.imagenTexto_img1 img{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    
-}*/
 .header {
   width: 100%;
   height: 100px;
@@ -261,6 +193,7 @@ footer {
 
 .bannerInicio-texto h1 {
   font-size: 70px;
+  z-index: 20;
 }
 
 .bannerInicio-texto h2 {
@@ -269,6 +202,47 @@ footer {
   font-family: 'Dancing Script', cursive;
   background-color: unset;
   z-index: 50;
+}
+
+.bannerInicio-texto a {
+  z-index: 30;
+}
+
+.bannerInicio-texto .botonComprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px auto;
+  border-radius: 50px;
+  background-color: palevioletred;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  outline: none;
+  width: 200px;
+  border-color: palevioletred;
+  border-style: outset;
+  border-width: 2px;
+  border: none;
+  z-index: 10;
+}
+
+.bannerInicio-texto .botonComprar:hover {
+  border-width: 4px;
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-color: #f780bb;
+  border-radius: 50px;
 }
 
 .bannerInicio-imagen {
@@ -284,6 +258,7 @@ footer {
 .bannerInicio-imagen img {
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -307,6 +282,7 @@ footer {
     font-family: 'Dancing Script', cursive;
     word-spacing: 10px;
     font-size: 100%;
+    padding: 0 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,7 +296,7 @@ footer {
     text-align: center;
   }
   .bannerInicio-texto h2 {
-    font-size: 60px;
+    font-size: 40px;
     color: black;
     font-family: 'Dancing Script', cursive;
     background-color: unset;
@@ -335,6 +311,7 @@ footer {
     width: 100%;
     height: auto;
     opacity: 50%;
+    z-index: 0;
   }
 }
 
@@ -399,8 +376,7 @@ footer {
 }
 
 .infoNosotros-texto p {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -452,6 +428,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contGaleria {
@@ -537,13 +517,13 @@ footer {
 .itemGaleria .itemCaption--producto {
   width: 100%;
   height: 100%;
-  background-color: #986662cc;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-top: 50px;
 }
 
 .itemGaleria .itemCaption--producto .botonGaleria {
@@ -553,10 +533,9 @@ footer {
   outline: none;
   border: 0;
   cursor: pointer;
-  font-family: "Mountains of Christmas", cursive;
   font-size: 18px;
-  color: blue;
-  background-color: red;
+  color: #fff;
+  background-color: #fd4e4eb6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,7 +661,7 @@ footer {
             align-items: center;
   }
   .itemGaleria .itemCaption--producto:hover {
-    background-color: #986662cc;
+    background-color: #dbbedfcc;
   }
   .itemGaleria .itemCaption .iconAngulo {
     display: -webkit-box;
@@ -713,6 +692,21 @@ footer {
   }
 }
 
+.seccionProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  padding: 30px 2%;
+}
+
 .producto {
   width: 270px;
   height: 380px;
@@ -722,6 +716,7 @@ footer {
           box-shadow: 0px 0px 2px 2px #c9c0c6;
   border-radius: 5px;
   padding: 1em;
+  background-color: #f5f0ed;
 }
 
 .producto__nombre {
@@ -744,10 +739,11 @@ footer {
   font-weight: 500;
   font-size: 1.3rem;
   margin: 5px 0;
+  color: #555;
 }
 
 .producto__borde {
-  border-top: 5px solid black;
+  border-top: 5px solid #555;
   margin-bottom: 10px;
 }
 
@@ -770,12 +766,12 @@ footer {
 .producto .producto__precio p {
   font-weight: 500;
   font-size: 1.5rem;
-  color: green;
+  color: #555;
 }
 
 .producto .botones {
-  border-color: green;
-  background-color: green;
+  border-color: #555;
+  background-color: #555;
 }
 
 .producto .sinStock {
@@ -797,6 +793,7 @@ footer {
 
 .flecha {
   font-size: 30px;
+  color: #555;
 }
 
 .carousel-control-prev {
@@ -808,13 +805,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .imgMayorista img {
   width: 100%;
-  opacity: 50%;
+  opacity: 30%;
 }
 
 .contenidoMayorista {
@@ -823,7 +820,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -840,7 +837,6 @@ footer {
 
 .contenidoMayorista p {
   font-size: 1.8rem;
-  font-family: 'Architects Daughter', cursive;
   text-align: center;
   font-weight: bold;
 }
@@ -949,15 +945,6 @@ footer {
   border: none;
 }
 
-.contacto-contenedor__form .boton--contacto:hover {
-  border-width: 4px;
-  color: white;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  background-color: #f780bb;
-  border-radius: 50px;
-}
-
 .contacto__imagen {
   width: 50%;
 }
@@ -971,7 +958,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1053px) {
+@media screen and (max-width: 992px) {
   .contacto-contenedor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
