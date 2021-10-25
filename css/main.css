@@ -74,23 +74,35 @@ h5 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  padding-right: 30px;
+  padding: 15px 30px;
   z-index: 100;
 }
 
 .navbar-nav .nav-item {
   font-size: 24px;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-nav .nav-item .nav-link {
   color: black;
-  text-align: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-nav .nav-item .nav-link--active {
-  text-decoration: underline;
   font-weight: bold;
+  border-radius: 30px;
+  background-color: palevioletred;
+  width: 150px;
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -102,7 +114,7 @@ h5 {
 footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(palevioletred), to(#ffc1d7));
   background-image: linear-gradient(palevioletred, #ffc1d7);
-  padding: 20px;
+  padding: 20px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,26 +122,52 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Mountains of Christmas', cursive;
+  width: 100%;
 }
 
-.imagenesfooter {
-  width: 100%;
+.redesfooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
 }
 
-.imagenesfooter img {
+.redesfooter a {
+  width: 100%;
+}
+
+.redesfooter .rrss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0px;
+}
+
+.redesfooter .rrss img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,18 +177,118 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
-@media screen and (max-width: 576px) {
-  .imagenesFooter {
+.redesfooter .rrss span {
+  margin-left: 10px;
+  color: black;
+}
+
+.logoFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logoFooter img {
+  height: 100px;
+}
+
+.tarjetasFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjetasFooter .imgTarjetas {
+  width: 200px;
+  text-align: right;
+}
+
+.tarjetasFooter .imgTarjetas img {
+  width: 50px;
+  margin: 5px;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 20px;
+  }
+  .logoFooter {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logoFooter img {
+    height: 80px;
+  }
+  .redesfooter {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .redesfooter .rrss {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+  }
+  .redesfooter .rrss img {
+    width: 50px;
+    height: 50px;
+  }
+  .redesfooter .rrss span {
+    display: none;
+  }
+  .tarjetasFooter {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tarjetasFooter .imgTarjetas {
+    width: 100%;
+    text-align: center;
+  }
+  .tarjetasFooter .imgTarjetas img {
+    margin-right: 5px;
   }
 }
 
@@ -162,12 +300,16 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   height: 90vh;
   background-color: #f8c9d1;
+  background-image: url(../../imagenes/bannerIndex.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 30%;
 }
 
 .bannerInicio-texto {
@@ -175,6 +317,7 @@ footer {
   font-family: 'Dancing Script', cursive;
   word-spacing: 10px;
   font-size: 100%;
+  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,10 +340,12 @@ footer {
 }
 
 .bannerInicio-texto h2 {
-  font-size: 60px;
+  font-size: 50px;
   color: black;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Barlow Semi Condensed", sans-serif;
   background-color: unset;
+  font-weight: bold;
+  font-style: italic;
   z-index: 50;
 }
 
@@ -275,6 +420,7 @@ footer {
             justify-content: center;
     width: 100%;
     height: 90vh;
+    background-image: url(../../imagenes/bannerIndexMobile.png);
   }
   .bannerInicio-texto {
     top: 30vh;
@@ -298,7 +444,6 @@ footer {
   .bannerInicio-texto h2 {
     font-size: 40px;
     color: black;
-    font-family: 'Dancing Script', cursive;
     background-color: unset;
   }
   .bannerInicio-imagen {
@@ -331,7 +476,8 @@ footer {
 
 .mainNosotros .saludo {
   text-align: center;
-  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .infoNosotros {
@@ -442,11 +588,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-      grid-template-areas: "tela" "madera" "mayorista" "lona" "catalogo";
+      grid-template-areas: "tela" "madera" "lona" "mayorista" "catalogo";
   -ms-grid-columns: 80%;
       grid-template-columns: 80%;
-  -ms-grid-rows: 80vw 50vw 80vw 50vw 500px;
-      grid-template-rows: 80vw 50vw 80vw 50vw 500px;
+  -ms-grid-rows: 80vw 80vw 80vw 80vw 500px;
+      grid-template-rows: 80vw 80vw 80vw 80vw 500px;
   grid-row-gap: 20px;
 }
 
@@ -467,7 +613,7 @@ footer {
 }
 
 .lona {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: lona;
   background-image: url("../imagenes/galeria/lona.jpg");
@@ -475,7 +621,7 @@ footer {
 }
 
 .mayorista {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: mayorista;
   background-image: url("../imagenes/galeria/mayorista.jpg");
@@ -535,7 +681,7 @@ footer {
   cursor: pointer;
   font-size: 18px;
   color: #fff;
-  background-color: #fd4e4eb6;
+  background-color: palevioletred;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,7 +747,7 @@ footer {
 @media screen and (min-width: 576px) {
   .contGaleria {
     height: 100vh;
-        grid-template-areas: "tela catalogo" "madera catalogo" "mayorista catalogo" "lona catalogo";
+        grid-template-areas: "tela catalogo" "madera catalogo" "lona catalogo" "mayorista catalogo";
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     -ms-grid-columns: 30vh 50vw;
@@ -692,7 +838,7 @@ footer {
   }
 }
 
-.seccionProductos {
+.contProductos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,10 +847,53 @@ footer {
           justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 30px 10px;
+}
+
+.menuDD {
+  display: none;
+}
+
+.menuProductos {
+  width: 280px;
+  margin-right: 20px;
+}
+
+.menuProductos a {
+  text-decoration: none;
+  color: #555;
+}
+
+.menuProductos .active {
+  color: palevioletred;
+}
+
+.menuProductos ul {
+  list-style-type: none;
+}
+
+.menuProductos ul li {
+  font-size: 22px;
+  margin: 20px 0;
+  border-bottom: 1px solid #CCC;
+}
+
+.seccionProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 100%;
-  padding: 30px 2%;
+  border-left: 2px solid #555;
 }
 
 .producto {
@@ -800,6 +989,63 @@ footer {
   background-color: unset;
 }
 
+@media screen and (max-width: 576px) {
+  .contProductos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .menuDD {
+    display: block;
+  }
+  .menuDD .botonDD {
+    width: 200px;
+    background-color: palevioletred;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .menuDD .dropdown-menu li {
+    -webkit-transition: 2s;
+    transition: 2s;
+    font-size: 20px;
+    border-bottom: 1px solid #CCC;
+    font-weight: bold;
+  }
+  .menuDD .dropdown-menu li .active {
+    color: palevioletred;
+    background-color: white;
+  }
+  .menuProductos {
+    display: none;
+  }
+  .seccionProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    border-left: none;
+  }
+}
+
 .imgMayorista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,10 +1088,52 @@ footer {
 }
 
 .contenidoMayorista button {
-  padding: 10px;
-  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px auto;
+  border-radius: 50px;
   background-color: palevioletred;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 20px;
+  outline: none;
+  width: 200px;
+  border-color: palevioletred;
+  border-style: outset;
+  border-width: 2px;
+  border: none;
+  z-index: 10;
+}
+
+.contenidoMayorista button:hover {
+  border-width: 4px;
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-color: #f780bb;
+  border-radius: 50px;
+}
+
+.faqs {
+  padding: 2%;
+}
+
+.faqs h2 {
+  font-weight: bold;
+}
+
+.faqs .accordion-body {
+  margin-left: 30px;
 }
 
 .contacto {

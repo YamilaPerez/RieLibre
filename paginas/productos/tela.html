@@ -32,7 +32,7 @@
                         <a class="nav-link" href="../nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../productos.html">Productos</a>
+                        <a class="nav-link nav-link--active" href="../productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../mayoristas.html">Mayoristas</a>
@@ -46,306 +46,263 @@
     </header>
     <main>
         <h1 class="tituloSeccion">Comiditas de tela</h1>
-        <section class="seccionProductos">
+        <div class="contProductos">
+            <div class="dropdown menuDD">
+                <a class="btn dropdown-toggle botonDD" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                </a>
 
-            <article class="producto wow animate__animated animate__fadeInUp">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item active" href="#"><i class="fas fa-angle-double-right"></i>Comiditas de tela</a></li>
+                    <li><a class="dropdown-item" href="./madera.html">Juguetes de madera</a></li>
+                    <li><a class="dropdown-item" href="./lona.html">Lonas didacticas</a></li>
+                    <li><a class="dropdown-item" href="./catalogo.html">Catalogo Completo</a></li>
+                </ul>
+            </div>
+            <aside class="menuProductos">
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-angle-double-right"></i>Comiditas de tela</a></li>
+                    <li><a href="./madera.html"><i class="fas fa-angle-double-right"></i>Juguetes de madera</a></li>
+                    <li><a href="./lona.html"><i class="fas fa-angle-double-right"></i>Lonas didacticas</a></li>
+                    <li><a href="./catalogo.html"><i class="fas fa-angle-double-right"></i>Catálogo completo</a></li>
+                </ul>
+            </aside>
+            <section class="seccionProductos">
+                <article class="producto wow animate__animated animate__fadeInUp">
 
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
+                    <div id="frutaverdu" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../imagenes/tela/frutaverdu1.jpg" alt="Imagen frutaverdu">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/frutaverdu2.jpg" alt="Imagen frutaverdu">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#frutaverdu"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left flecha"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#frutaverdu"
+                            data-bs-slide="next">
+                            <i class="fas fa-chevron-right flecha"></i>
+                        </button>
+
+                    </div>
+                    <div class="producto__nombre">
+                        <h3>Frutas y Verduras</h3>
+                    </div>
+                    <div class="producto__borde"></div>
+                    <div class="producto__precio">
+                        <p>$350,00 - En Stock</p>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
+                    <button type="button" class="btn btn-success botones">
+                        Añadir <i class="fas fa-cart-plus"></i>
                     </button>
 
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
 
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
+                </article>
 
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
+                <article class="producto wow animate__animated animate__fadeInUp">
 
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
+                    <div id="hambur" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../imagenes/tela/hambur1.jpg" alt="Imagen hambur">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/hambur2.jpg" alt="Imagen hambur">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/hambur3.jpg" alt="Imagen hambur">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hambur"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left flecha"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hambur"
+                            data-bs-slide="next">
+                            <i class="fas fa-chevron-right flecha"></i>
+                        </button>
+
+                    </div>
+                    <div class="producto__nombre">
+                        <h3>Hamburguesa</h3>
+                    </div>
+                    <div class="producto__borde"></div>
+                    <div class="producto__precio">
+                        <p>$220,00 - En Stock</p>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
+                    <button type="button" class="btn btn-success botones">
+                        Añadir <i class="fas fa-cart-plus"></i>
                     </button>
 
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
 
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
+                </article>
 
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
+                <article class="producto wow animate__animated animate__fadeInUp">
 
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
+                    <div id="huevo" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../imagenes/tela/huevo1.jpg" alt="Imagen huevo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/huevo2.jpg" alt="Imagen huevo">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#huevo"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left flecha"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#huevo"
+                            data-bs-slide="next">
+                            <i class="fas fa-chevron-right flecha"></i>
+                        </button>
+
+                    </div>
+                    <div class="producto__nombre">
+                        <h3>Huevo con papitas</h3>
+                    </div>
+                    <div class="producto__borde"></div>
+                    <div class="producto__precio">
+                        <p>$150,00 - En Stock</p>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
+                    <button type="button" class="btn btn-success botones">
+                        Añadir <i class="fas fa-cart-plus"></i>
                     </button>
 
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
 
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
+                </article>
 
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
+                <article class="producto wow animate__animated animate__fadeInUp">
 
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
+                    <div id="pizza" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../imagenes/tela/pizza1.jpg" alt="Imagen pizza">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/pizza2.jpg" alt="Imagen pizza">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pizza"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left flecha"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pizza"
+                            data-bs-slide="next">
+                            <i class="fas fa-chevron-right flecha"></i>
+                        </button>
+
+                    </div>
+                    <div class="producto__nombre">
+                        <h3>Pizza con huevo</h3>
+                    </div>
+                    <div class="producto__borde"></div>
+                    <div class="producto__precio">
+                        <p>$300,00 - En Stock</p>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
+                    <button type="button" class="btn btn-success botones">
+                        Añadir <i class="fas fa-cart-plus"></i>
                     </button>
 
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
 
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
+                </article>
 
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
+                <article class="producto wow animate__animated animate__fadeInUp">
 
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
+                    <div id="sanguche" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../imagenes/tela/sanguche1.jpg" alt="Imagen sanguche">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/sanguche2.jpg" alt="Imagen sanguche">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../imagenes/tela/sanguche3.jpg" alt="Imagen sanguche">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sanguche"
+                            data-bs-slide="prev">
+                            <i class="fas fa-chevron-left flecha"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sanguche"
+                            data-bs-slide="next">
+                            <i class="fas fa-chevron-right flecha"></i>
+                        </button>
+
+                    </div>
+                    <div class="producto__nombre">
+                        <h3>Sandwich completo</h3>
+                    </div>
+                    <div class="producto__borde"></div>
+                    <div class="producto__precio">
+                        <p>$250,00 - En Stock</p>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
+                    <button type="button" class="btn btn-success botones">
+                        Añadir <i class="fas fa-cart-plus"></i>
                     </button>
 
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
-
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
-
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
-
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
-                    </button>
-
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
-
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
-
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
-
-
-            </article>
-            <article class="producto wow animate__animated animate__fadeInUp">
-
-                <div id="hambur" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../imagenes/tela/hambur.jpg" alt="Imagen Tela">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#hambur" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left flecha"></i>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#hambur" data-bs-slide="next">
-                        <i class="fas fa-chevron-right flecha"></i>
-                    </button>
-
-                </div>
-                <div class="producto__nombre">
-                    <h3>Comidita de Tela</h3>
-                </div>
-                <div class="producto__borde"></div>
-                <div class="producto__precio">
-                    <p>$650,00 - En Stock</p>
-                </div>
-
-                <button type="button" class="btn btn-success botones">
-                    Mas info <i class="fas fa-book"></i>
-                </button>
-
-                <button type="button" class="btn btn-success botones">
-                    Añadir <i class="fas fa-cart-plus"></i>
-                </button>
-
-
-            </article>
-        </section>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
-        <div class="imagenesfooter">
-            <a href="https://goo.gl/maps/g71BMSbQ2SFx6y928"><img src="../../imagenes/footer/logoMaps.png"
-                    alt="Logo-GoogleMaps"></a>
-            <a href="https://www.instagram.com/rie.libre"><img src="../../imagenes/footer/logoInstagram.png"
-                    alt="Logo-Instagram"></a>
-            <a href="http://wa.me/1169649191"><img src="../../imagenes/footer/logoWhatsapp.png" alt="Logo-Whatsapp"></a>
-            <a href="http://mailto:rielibredidacticos@gmail.com"><img src="../../imagenes/footer/logoGmail.png"
-                    alt="Logo-Gmail"></a>
+        <div class="redesfooter">
+            <a href="https://goo.gl/maps/g71BMSbQ2SFx6y928">
+                <div class="rrss">
+                    <img src="../../imagenes/footer/logoMaps.png" alt="Logo-GoogleMaps">
+                    <span>Grand Bourg, Buenos Aires</span>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/rie.libre">
+                <div class="rrss">
+                    <img src="../../imagenes/footer/logoInstagram.png"
+                    alt="Logo-Instagram">
+                    <span>/rie.libre</span>
+                </div>
+            </a>
+            <a href="http://wa.me/1169649191">
+                <div class="rrss">
+                    <img src="../../imagenes/footer/logoWhatsapp.png" alt="Logo-Whatsapp">
+                    <span>11 6964 9191</span>
+                </div>
+            </a>
+            <a href="http://mailto:rielibredidacticos@gmail.com">
+                <div class="rrss">
+                    <img src="../../imagenes/footer/logoGmail.png"
+                    alt="Logo-Gmail">
+                    <span>rielibredidacticos@gmail.com</span>
+                </div>
+            </a>
+        </div>
+        <div class="logoFooter">
+            <img src="../../imagenes/logoHeader.png" alt="logoFooter">
+        </div>
+        <div class="tarjetasFooter">
+            <h4>Medios de Pago</h4>
+            <div class="imgTarjetas">
+                <img src="../../imagenes/footer/visa.png" alt="VISA">
+                <img src="../../imagenes/footer/american.png" alt="AMERICANEXPRESS">
+                <img src="../../imagenes/footer/mastercard.png" alt="MASTERCARD">
+                <img src="../../imagenes/footer/mercadopago.png" alt="MERCADOPAGO">
+                <img src="../../imagenes/footer/pagofacil.png" alt="PAGOFACIL">
+                <img src="../../imagenes/footer/rapipago.png" alt="RAPIPAGO">
+            </div>
         </div>
     </footer>
 

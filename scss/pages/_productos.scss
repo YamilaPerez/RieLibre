@@ -13,11 +13,11 @@
     grid-template-areas:
         "tela"
         "madera"
-        "mayorista"
         "lona"
+        "mayorista"
         "catalogo";
     grid-template-columns: 80%;
-    grid-template-rows: 80vw 50vw 80vw 50vw 500px;
+    grid-template-rows: 80vw 80vw 80vw 80vw 500px;
     grid-row-gap: 20px;
 }
 
@@ -63,7 +63,7 @@ $imgNames: (tela, madera, lona, mayorista, catalogo);
                 cursor: pointer;
                 font-size: 18px;
                 color: #fff;
-                background-color: #fd4e4eb6;
+                background-color: palevioletred;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -116,8 +116,8 @@ $imgNames: (tela, madera, lona, mayorista, catalogo);
         grid-template-areas:
             "tela catalogo"
             "madera catalogo"
-            "mayorista catalogo"
-            "lona catalogo";
+            "lona catalogo"
+            "mayorista catalogo";
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 30vh 50vw;
         grid-column-gap: 30px;

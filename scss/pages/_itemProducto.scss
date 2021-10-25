@@ -1,10 +1,43 @@
-//CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
-.seccionProductos{
+.contProductos {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.menuDD {
+    display: none;
+}
+
+.menuProductos {
+    width: 280px;
+    margin-right: 20px;
+    a{
+        text-decoration: none;
+        color: #555;
+    }
+    .active {
+        color: palevioletred;
+    }
+    ul {
+        list-style-type: none;
+
+        li {
+            font-size: 22px;
+            margin: 20px 0;
+            border-bottom: 1px solid #CCC;
+        }
+    }
+}
+
+//CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
+.seccionProductos {
+    display: flex;
+    justify-content: flex-start;
     flex-flow: row wrap;
     width: 100%;
-    padding: 30px 2%;
+    border-left: 2px solid #555;
 }
 
 //CARD PRODUCTO
@@ -17,6 +50,7 @@
     border-radius: 5px;
     padding: 1em;
     background-color: $bgItemProducto;
+
     &__nombre {
         display: flex;
         flex-direction: row;
@@ -78,4 +112,55 @@
 
 .carousel-control-prev {
     background-color: unset;
+}
+
+@media screen and (max-width: 576px) {
+    .contProductos {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .menuDD {
+        display: block;
+
+        .botonDD {
+            width: 200px;
+            background-color: palevioletred;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: 2s;
+        }
+
+        .dropdown-menu {
+            li {
+                transition: 2s;
+                font-size: 20px;
+                border-bottom: 1px solid #CCC;
+                font-weight: bold;
+
+                .active {
+                    color: palevioletred;
+                    background-color: white;
+                }
+            }
+
+        }
+    }
+
+    .menuProductos {
+        display: none;
+    }
+
+    //CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
+    .seccionProductos {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 100%;
+        border-left: none;
+    }
 }
