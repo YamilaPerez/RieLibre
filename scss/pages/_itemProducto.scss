@@ -31,7 +31,7 @@
     }
 }
 
-//CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
+//CONTENEDOR FLEX PARA LOS PRODUCTOS
 .seccionProductos {
     display: flex;
     justify-content: flex-start;
@@ -116,11 +116,8 @@
 
 @media screen and (max-width: 576px) {
     .contProductos {
-        justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
-        padding: 30px 10px;
     }
 
     .menuDD {
@@ -155,12 +152,8 @@
         display: none;
     }
 
-    //CONTENEDOR FLEX PARA LOS PRODUCTOS | HASTA 4 POR FILA
     .seccionProductos {
-        display: flex;
         justify-content: center;
-        flex-flow: row wrap;
-        width: 100%;
         border-left: none;
     }
 }

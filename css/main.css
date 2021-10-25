@@ -21,11 +21,41 @@ a {
   margin-bottom: 20px;
 }
 
-h5 {
-  color: white;
-  font-size: 20px;
+.botonRosa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px auto;
+  border-radius: 50px;
   background-color: palevioletred;
-  letter-spacing: 3px;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  outline: none;
+  width: 200px;
+  border-color: palevioletred;
+  border-style: outset;
+  border-width: 2px;
+  border: none;
+  z-index: 10;
+}
+
+.botonRosa:hover {
+  border-width: 4px;
+  color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-color: #f780bb;
+  border-radius: 50px;
 }
 
 .header {
@@ -336,127 +366,31 @@ footer {
 
 .bannerInicio-texto h1 {
   font-size: 70px;
-  z-index: 20;
 }
 
 .bannerInicio-texto h2 {
   font-size: 50px;
   color: black;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  background-color: unset;
   font-weight: bold;
   font-style: italic;
-  z-index: 50;
-}
-
-.bannerInicio-texto a {
-  z-index: 30;
-}
-
-.bannerInicio-texto .botonComprar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px auto;
-  border-radius: 50px;
-  background-color: palevioletred;
-  color: white;
-  padding: 15px 20px 15px 20px;
-  border: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 20px;
-  outline: none;
-  width: 200px;
-  border-color: palevioletred;
-  border-style: outset;
-  border-width: 2px;
-  border: none;
-  z-index: 10;
-}
-
-.bannerInicio-texto .botonComprar:hover {
-  border-width: 4px;
-  color: white;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  background-color: #f780bb;
-  border-radius: 50px;
-}
-
-.bannerInicio-imagen {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.bannerInicio-imagen img {
-  width: 100%;
-  height: auto;
-  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
   .bannerInicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    height: 90vh;
     background-image: url(../../imagenes/bannerIndexMobile.png);
   }
   .bannerInicio-texto {
     top: 30vh;
     width: 100%;
     font-family: 'Dancing Script', cursive;
-    word-spacing: 10px;
-    font-size: 100%;
     padding: 0 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: absolute;
-    text-align: center;
   }
   .bannerInicio-texto h2 {
     font-size: 40px;
-    color: black;
-    background-color: unset;
-  }
-  .bannerInicio-imagen {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .bannerInicio-imagen img {
-    width: 100%;
-    height: auto;
-    opacity: 50%;
-    z-index: 0;
   }
 }
 
@@ -531,22 +465,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 10px 5%;
   }
   .infoNosotros-imagen {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     width: 60%;
     padding: 0;
   }
@@ -560,7 +481,6 @@ footer {
             order: 2;
   }
   .infoNosotros-texto {
-    width: 80%;
     padding: 10px 10%;
   }
   .infoNosotros-texto--izquierdo {
@@ -991,9 +911,6 @@ footer {
 
 @media screen and (max-width: 576px) {
   .contProductos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1001,8 +918,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    padding: 30px 10px;
   }
   .menuDD {
     display: block;
@@ -1031,17 +946,9 @@ footer {
     display: none;
   }
   .seccionProductos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    width: 100%;
     border-left: none;
   }
 }
@@ -1087,49 +994,25 @@ footer {
   font-weight: bold;
 }
 
-.contenidoMayorista button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px auto;
-  border-radius: 50px;
-  background-color: palevioletred;
-  color: white;
-  padding: 15px 20px 15px 20px;
-  border: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 20px;
-  outline: none;
-  width: 200px;
-  border-color: palevioletred;
-  border-style: outset;
-  border-width: 2px;
-  border: none;
-  z-index: 10;
-}
-
-.contenidoMayorista button:hover {
-  border-width: 4px;
-  color: white;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  background-color: #f780bb;
-  border-radius: 50px;
-}
-
 .faqs {
   padding: 2%;
 }
 
 .faqs h2 {
   font-weight: bold;
+}
+
+.faqs .accordion-button {
+  border-color: palevioletred;
+  background-color: palevioletred;
+  -webkit-box-shadow: 0 0 0.25rem palevioletred;
+          box-shadow: 0 0 0.25rem palevioletred;
+  color: white;
+}
+
+.faqs .accordion-button.collapsed {
+  color: #555;
+  background-color: rgba(236, 207, 212, 0.514);
 }
 
 .faqs .accordion-body {
@@ -1205,34 +1088,6 @@ footer {
   font-weight: 600;
 }
 
-.contacto-contenedor__form .boton--contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 15px auto;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: palevioletred;
-  color: white;
-  padding: 15px 20px 15px 20px;
-  border: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  outline: none;
-  width: 200px;
-  border-color: palevioletred;
-  border-style: outset;
-  border-width: 2px;
-  border: none;
-}
-
 .contacto__imagen {
   width: 50%;
 }
@@ -1268,5 +1123,21 @@ footer {
   .contacto__imagen {
     display: none;
   }
+}
+
+.contError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

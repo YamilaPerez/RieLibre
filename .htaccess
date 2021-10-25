@@ -1,0 +1,18 @@
+
+# HTID:18461949: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18461949:
+
+Options FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^home$ index.html [L]
+RewriteRule ^nosotros$ paginas/nosotros.html [L]
+RewriteRule ^productos$ paginas/productos.html [L]
+RewriteRule ^comiditas$ paginas/productos/tela.html [L]
+RewriteRule ^juguetes$ paginas/productos/madera.html [L]
+RewriteRule ^lonas$ paginas/productos/lona.html [L]
+RewriteRule ^catalogo$ paginas/productos/catalogo.html [L]
+RewriteRule ^mayoristas$ paginas/mayoristas.html [L]
+RewriteRule ^contacto$ paginas/contacto.html [L]
+ErrorDocument 404 /404.html
